@@ -25,16 +25,10 @@ $logo = get_field('theme_logo', 'options');
 </header>
 
 <section class="component component-marquee">
-    <ul class=“carousel-container”>
-         <li class=“carousel-img”>
-            <img src=“../img.jpg” alt=“”>
-          </li>
-          <li class=“carousel-img”>
-            <img src=“../img.jpg” alt=“”>
-          </li>
-          <li class=“carousel-img”>
-            <img src=“../img.jpg” alt=“”>
-          </li>
+    <ul class="carousel-container">
+       <li class="carousel-img" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
+       <li class="carousel-img" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
+       <li class="carousel-img" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
     </ul>
 </section>
 
@@ -60,25 +54,25 @@ $logo = get_field('theme_logo', 'options');
         <div class="row ">
             <div class="col-md-3"></div>
             <div class="col-md-3">
-                <img src="assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.png" alt="" class="who_img">
             </div>
             <div class="col-md-3">
-                <img src="assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.png" alt="" class="who_img">
             </div>
             <div class="col-md-3">
-                <img src="/assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.png" alt="" class="who_img">
             </div>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3">
-                <img src="assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.png" alt="" class="who_img">
             </div>
             <div class="col-md-3">
-                <img src="assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.png" alt="" class="who_img">
             </div>
             <div class="col-md-3">
-                <img src="assets/imgs/person1.png" class="who_img">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.png" alt="" class="who_img">
             </div>
         </div>
     </div>
@@ -92,7 +86,7 @@ $logo = get_field('theme_logo', 'options');
   <div class="containter">
         <div class="row ">
             <div class="col-md-3 footer_logo">
-                <img src="assets/imgs/logo-primary.svg">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg">
             </div>
             <div class="col-md-3 footer_quickNav">
                 <ul>

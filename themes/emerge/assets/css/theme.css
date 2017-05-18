@@ -21,7 +21,7 @@ nav {
     display: block;
     width: 100%;
     margin: 40px auto 50px;
-    height: auto;  
+    height: auto;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    
+
 }
 
 nav:after {
@@ -53,7 +53,7 @@ nav li a {
 
 nav li a:hover {
     color: #7BC043;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 
@@ -71,7 +71,7 @@ h1 {
     font-weight: 600;
     font-size: 1.2em;
     color: #000;
-    text-align: center;   
+    text-align: center;
 }
 
 .component-what-we-do p {
@@ -88,11 +88,27 @@ h1 {
 
 
 
+/*------------------- Begin Carousel ---------------*/
+
+.carousel-container {
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-img {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 500px;
+}
+
+/*------------------- End Carousel ---------------*/
+
+
 
 /*------------------- Begin Who We Are ---------------*/
 
 .component-who-we-are {
-    background-image: url("/assets/imgs/bg-who-we-are.svg");
+    background-image: url("../imgs/bg-who-we-are.svg");
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
@@ -101,8 +117,8 @@ h1 {
 
 .who_img {
     width: 100%;
-    max-width: 400px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
     padding: 10px;
 }
 
@@ -123,7 +139,7 @@ footer {
     height: 100px;
     background-color: #ffffff;
     color: #404041;
-    
+
 }
 
 .footer_logo {
@@ -138,5 +154,3 @@ footer_quickNav li {
     font-size: 1em;
     list-style-type: none;
 }
-
-
