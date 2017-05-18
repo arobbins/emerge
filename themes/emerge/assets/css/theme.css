@@ -92,25 +92,51 @@ h1 {
 /*------------------- Begin Who We Are ---------------*/
 
 .component-who-we-are {
-/*
     background-image: url("/assets/imgs/bg-who-we-are.svg");
     background-size: cover;
     background-repeat: repeat;
-*/
     width: 100%;
-    height: 800px;
-    background-color: blue;
+    height: auto;
 }
 
 .who_img {
     width: 100%;
     max-width: 400px;
-    height: 650px;
+    height: 400px;
+    padding: 10px;
 }
 
-.who_cont {
-    border: 1px solid #000;
+
+
+
+
+/*------------------- End Who We Are ---------------*/
+
+
+
+
+
+/*------------------- Begin Footer ---------------*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    color: #404041;
+    
 }
 
+.footer_logo {
+    border-right: 1px solid black;
+}
+
+.footer_quickNav {
+    border-right: 1px solid black;
+}
+
+footer_quickNav li {
+    font-size: 1em;
+    list-style-type: none;
+}
 
 

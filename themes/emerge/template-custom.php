@@ -89,5 +89,20 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <footer class="component component-footer">
-  <h1>Footer component</h1>
+  <div class="containter">
+        <div class="row ">
+            <div class="col-md-3 footer_logo">
+                <img src="assets/imgs/logo-primary.svg">
+            </div>
+            <div class="col-md-3 footer_quickNav">
+                <ul>
+                    <li>WHAT WE DO</li>
+                    <li>WHO WE ARE</li>
+                    <li>GET CONNECTED</li>
+                </ul>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+      </div>
+    </div>
 </footer>
