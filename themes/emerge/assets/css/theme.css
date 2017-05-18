@@ -14,3 +14,103 @@ body {
   display: block;
   max-width: 250px;
 }
+
+/*------------------- Begin Nav ---------------*/
+
+nav {
+    display: block;
+    width: 100%;
+    margin: 40px auto 50px;
+    height: auto;  
+}
+
+nav ul {
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    list-style:none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+nav li a {
+    padding: 10px 25px;
+    color: #404041;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+nav li a:hover {
+    color: #7BC043;
+    text-decoration: none;  
+}
+
+
+/*------------------- End Nav ---------------*/
+
+h1 {
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.component-what-we-do h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;   
+}
+
+.component-what-we-do p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+}
+
+
+.color-1 {
+    color: #7BC043;
+}
+
+
+
+
+/*------------------- Begin Who We Are ---------------*/
+
+.component-who-we-are {
+/*
+    background-image: url("/assets/imgs/bg-who-we-are.svg");
+    background-size: cover;
+    background-repeat: repeat;
+*/
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+}
+
+.who_img {
+    width: 100%;
+    max-width: 400px;
+    height: 650px;
+}
+
+.who_cont {
+    border: 1px solid #000;
+}
+
+
+
