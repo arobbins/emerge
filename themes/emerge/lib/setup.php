@@ -108,7 +108,7 @@ function assets() {
 
     wp_enqueue_style('slick-css', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css', false, null);
     wp_enqueue_style('child-theme-css', Assets\asset_path('css/theme.css'), false, null);
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat', false, null);
+    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i', false, null);
 
     wp_enqueue_script('modernizr', Assets\asset_path('js/vendor/modernizr.min.js'), [], null, true);
     wp_enqueue_script('slick-js', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', ['jquery'], null, true);
