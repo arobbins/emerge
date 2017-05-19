@@ -49,30 +49,57 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <section class="component component-who-we-are">
-  <h1>Who we are component</h1>
+  <h1 class="header_white">WHO WE ARE</h1>
     <div class="containter">
-        <div class="row ">
-            <div class="col-md-3"></div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.png" alt="" class="who_img">
-            </div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.png" alt="" class="who_img">
-            </div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.png" alt="" class="who_img">
-            </div>
-        </div>
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.png" alt="" class="who_img">
+            <div class="col-md-12">
+                <div class="img_block"> 
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                    </div>
+                    </div>
+                       
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top">
+                            <div class="hvrbox-text"><h3>Jane Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                        </div>
+                    </div>
+                       
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                        </div>
+                    </div>
+                </div>   
             </div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.png" alt="" class="who_img">
-            </div>
-            <div class="col-md-3">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.png" alt="" class="who_img">
+                
+            <div class="col-md-12">
+                <div class="img_block"> 
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><h3>Jane Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                    </div>
+                    </div>
+                       
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person3.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top">
+                            <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                        </div>
+                    </div>
+                       
+                    <div class="hvrbox">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </div>
     </div>
@@ -85,18 +112,48 @@ $logo = get_field('theme_logo', 'options');
 <footer class="component component-footer">
   <div class="containter">
         <div class="row ">
-            <div class="col-md-3 footer_logo">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg">
+            <div class="col-md-3">
+                <div class="footer_logoSec">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg" class="footerLogo">
+                </div>
             </div>
-            <div class="col-md-3 footer_quickNav">
-                <ul>
-                    <li>WHAT WE DO</li>
-                    <li>WHO WE ARE</li>
-                    <li>GET CONNECTED</li>
-                </ul>
+            <div class="col-md-3">
+                <div class="footer_quickNav">
+                    <ul>
+                        <li>WHAT WE DO</li>
+                        <li>WHO WE ARE</li>
+                        <li>GET CONNECTED</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-      </div>
+            <div class="col-md-3">
+                 <div class="footer_contact">   
+                    <address>
+                        <p>1300 Mendota Heights Road<br>
+                        Mendota Heights, MN 55120</p>
+                        <p>952.905.2503<br>
+                        info@e-mergeretail.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_search">
+                    <form>
+                          <input type="search" name="site_search" placeholder="Search">
+                    </form>
+
+                    <div class="footer_sm">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/fb_logo.png" class="footer_sm_logo">
+                    </div>
+                    <div class="footer_sm">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/twitter_logo.png" class="footer_sm_logo">
+                    </div>
+                    <div class="footer_sm">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/linkedin_logo.png" class="footer_sm_logo">
+                    </div>
+                </div>
+            </div>
     </div>
+</div>
+
 </footer>

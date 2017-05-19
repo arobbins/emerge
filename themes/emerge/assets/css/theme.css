@@ -15,6 +15,14 @@ body {
   max-width: 250px;
 }
 
+.header_white {
+    color: #ffffff;
+    font-family: Montserrat-Bold, helvetica, arial;
+    text-align: center;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
 /*------------------- Begin Nav ---------------*/
 
 nav {
@@ -48,7 +56,7 @@ nav li a {
     color: #404041;
     font-size: 1.2em;
     font-weight: 600;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: Montserrat-Bold, helvetica, arial;
 }
 
 nav li a:hover {
@@ -59,32 +67,8 @@ nav li a:hover {
 
 /*------------------- End Nav ---------------*/
 
-h1 {
-    margin-bottom: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    text-align: center;
-}
-
-.component-what-we-do h4 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    color: #000;
-    text-align: center;
-}
-
-.component-what-we-do p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1em;
-    color: #000;
-    text-align: center;
-}
 
 
-.color-1 {
-    color: #7BC043;
-}
 
 
 
@@ -113,16 +97,77 @@ h1 {
     background-repeat: repeat;
     width: 100%;
     height: auto;
+    padding: 50px 0 100px 0;
 }
 
-.who_img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
+.img_block {
+    width: 80%;
+    margin: 0 auto;
 }
 
-
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 33%;
+	height: auto;
+    padding: 5px;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 5px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: left;
+	font-size: 1.2em;
+	display: inline-block;
+	position: absolute;
+    width: 80%;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
 
 
 
@@ -136,21 +181,83 @@ h1 {
 
 footer {
     width: 100%;
-    height: 100px;
+    height: auto;
+    padding: 20px 0;
     background-color: #ffffff;
     color: #404041;
+}
+
+
+
+.footer_logoSec {
+    width: 100%;
+    display: inline-block;
+    border-right: 1px solid black;
 
 }
 
-.footer_logo {
-    border-right: 1px solid black;
+.footerLogo {
+    width: 75%;
+    margin: 0 12.5%;
+    padding: 0;
 }
 
 .footer_quickNav {
+    width: 100%;
+    display: inline-block;
     border-right: 1px solid black;
+    
 }
 
-footer_quickNav li {
-    font-size: 1em;
+.footer_contact {
+    width: 100%;
+    display: inline-block;
+    border-right: 1px solid black;
+    font-size: 1.2em;
+    font-family: 'Montserrat', helvetica, arial;
+}
+
+.footer_contact p {
+    font-family: 'Montserrat-Bold', helvetica, arial;
+    width: 90%;
+    margin: 0 auto 10px;
+    padding: 0;
+}
+
+.footer_quickNav ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.component-footer ul li {
+    font-family: 'Montserrat-Bold', helvetica, arial;
+    font-size: 1.2em;
     list-style-type: none;
+    padding: 2px 0;
+}
+
+.footer_search {
+    width: 100%;
+    display: inline-block;
+   
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.footer_sm {
+    width: 25%;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.footer_sm_logo {
+    width: 45px;
+    display: inline-block;
 }
