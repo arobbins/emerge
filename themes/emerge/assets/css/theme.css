@@ -4,10 +4,14 @@ Author:         Simpleblend
 Author URI:     https://simpleblend.net
 
 */
-body {
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', helvetica, arial;
+}
+
+.row {
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,6 +105,10 @@ nav li a:hover {
 /*------------------- End Carousel ---------------*/
 
 
+.component-partners {
+    width: 100%;
+    height: 500px;
+}
 
 /*------------------- Begin Who We Are ---------------*/
 
@@ -127,6 +135,7 @@ nav li a:hover {
 	display: inline-block;
 	overflow: hidden;
 	width: 33%;
+    min-width: 275px;
 	height: auto;
     padding: 5px;
 }
@@ -187,6 +196,25 @@ nav li a:hover {
 /*------------------- End Who We Are ---------------*/
 
 
+/*------------------- Begin Get Connected ---------------*/
+
+.component-get-connected{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #EFEEEE;
+}
+
+.component-get-connected h1 {
+    color: #000000;
+    text-align: center;
+}
+
+
+
+
+/*------------------- End Get Connected ---------------*/
 
 
 
@@ -195,70 +223,95 @@ nav li a:hover {
 footer {
     width: 100%;
     height: auto;
-    padding: 20px 0;
+    padding: 20px 0 0;
     background-color: #ffffff;
     color: #404041;
+}
+
+footer .col-md-3 {
+    padding: 0;
 }
 
 
 
 .footer_logoSec {
     width: 100%;
+    height: 100px;
     display: inline-block;
     border-right: 1px solid black;
 
 }
 
 .footerLogo {
-    width: 75%;
-    margin: 0 12.5%;
+    width: 50%;
+    margin: 0 25%;
     padding: 0;
+    text-align: center;
 }
 
 .footer_quickNav {
     width: 100%;
-    display: inline-block;
-    border-right: 1px solid black;
-
-}
-
-.footer_contact {
-    width: 100%;
-    display: inline-block;
-    border-right: 1px solid black;
-    font-size: 1.2em;
-    font-family: 'Montserrat', helvetica, arial;
-}
-
-.footer_contact p {
-    font-family: 'Montserrat-Bold', helvetica, arial;
-    width: 90%;
-    margin: 0 auto 10px;
+    height: 100px;
+    margin: 0;
     padding: 0;
+    display: inline-block;
+    border-right: 1px solid black;
+    
 }
 
 .footer_quickNav ul {
-    width: 90%;
+    width: 40%;
     margin: 0 auto;
+    padding: 0;
+    position: relative;
 }
 
 .component-footer ul li {
-    font-family: 'Montserrat-Bold', helvetica, arial;
-    font-size: 1.2em;
+    font-family: 'Montserrat', helvetica, arial;
+    font-size: 1.1em;
+    font-weight: 600;
     list-style-type: none;
     padding: 2px 0;
 }
 
+.footer_contact {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border-right: 1px solid black;
+    font-size: 1.1em;
+    font-family: 'Montserrat', helvetica, arial;
+}
+
+.footer_contact address {
+    font-family: 'Montserrat', helvetica, arial;
+    width: 65%;
+    margin: 0 auto 10px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.footer_contact p {
+    font-family: 'Montserrat', helvetica, arial;
+    width: 65%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
 .footer_search {
     width: 100%;
+    height: 100px;
     display: inline-block;
-
+   
 }
 
 form {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    padding-left: 10px;
 }
 
 .footer_sm {
@@ -267,10 +320,26 @@ form {
     margin-top: 15px;
     padding: 0;
     text-align: center;
-
+    
 }
 
 .footer_sm_logo {
     width: 45px;
     display: inline-block;
 }
+
+.thin_footer {
+    background-color: #414142;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h6 {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 19px;  
+}
+

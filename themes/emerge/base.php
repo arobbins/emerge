@@ -26,7 +26,7 @@ use Roots\Sage\Wrapper;
     ?>
 
     <div class="wrapper" role="document">
-      <div class="content row">
+      <div class="content">
 
         <main class="main">
           <?php include Wrapper\template_path(); ?>
