@@ -45,14 +45,23 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <section class="component component-partners">
-  
-    <h1>SOME OF OUR VALUED PARTNERS</h1>
-        <ul class="multiple-items">
-       <li style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
-       <li style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
-       <li style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/carousel-slide1.jpg')"></li>
-    </ul>
-  
+
+  <h1>SOME OF OUR VALUED PARTNERS</h1>
+  <ul class="multiple-items">
+    <li>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
+    </li>
+    <li>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
+    </li>
+    <li>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
+    </li>
+    <li>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
+    </li>
+  </ul>
+
 </section>
 
 <section class="component component-who-we-are">
@@ -124,13 +133,13 @@ $logo = get_field('theme_logo', 'options');
     <h1>Get connected component</h1>
     <div class="row">
         <div class="col-md-6">
-        
+
         </div>
-        
+
         <div class="col-md-6">
-        
+
         </div>
-      
+
     </div>
   </div>
 </section>
@@ -153,14 +162,14 @@ $logo = get_field('theme_logo', 'options');
                 </div>
             </div>
             <div class="col-md-3">
-                 <div class="footer_contact">   
+                 <div class="footer_contact">
                     <address>
                         1300 Mendota Heights Road<br>
                         Mendota Heights, MN 55120
                     </address>
                         <p>952.905.2503<br>
                         info@e-mergeretail.com</p>
-                    
+
                 </div>
             </div>
             <div class="col-md-3">
@@ -180,8 +189,8 @@ $logo = get_field('theme_logo', 'options');
                     </div>
                 </div>
             </div>
-            
-            
+
+
     </div>
 </div>
 
