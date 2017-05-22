@@ -45,22 +45,30 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <section class="component component-partners">
-
-  <h1>SOME OF OUR VALUED PARTNERS</h1>
-  <ul class="multiple-items">
-    <li>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
-    </li>
-    <li>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
-    </li>
-    <li>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
-    </li>
-    <li>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/sales.svg" alt="Sales">
-    </li>
-  </ul>
+    <div class="containter">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1>SOME OF OUR VALUED PARTNERS</h1>
+                  <ul class="multiple-items">
+                    <li class="partner_slide">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/best-buy-logo.svg" alt="Sales" class="partner_logo">
+                    </li>
+                    <li class="partner_slide">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/Kohls_logo.svg" alt="Sales" class="partner_logo">
+                    </li>
+                    <li class="partner_slide">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo_amazon.svg" alt="Sales" class="partner_logo">
+                    </li>
+                    <li class="partner_slide">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/Target_logo.svg" alt="Sales" class="partner_logo">
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+  
 
 </section>
 
