@@ -163,8 +163,8 @@ nav li a:hover {
 }
 
 .img_block {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0;
 }
 
 .hvrbox,
@@ -181,10 +181,10 @@ nav li a:hover {
     padding: 5px;
 }
 .hvrbox img {
-	max-width: 100%;
+	width: 100%;
 }
 .hvrbox .hvrbox-layer_bottom {
-	display: block;
+	display: inline-block;
 }
 .hvrbox .hvrbox-layer_top {
 	opacity: 0;
@@ -261,10 +261,15 @@ nav li a:hover {
 
 /*------------------- Begin Footer ---------------*/
 
-footer {
+.component-footer .col-md-3, col-sm-6 {
+
+    margin: 0 auto;
+}
+
+.component-footer .row {
     width: 100%;
     height: auto;
-    padding: 20px 0 0;
+    padding: 20px 0 0px;
     background-color: #ffffff;
     color: #404041;
 }
@@ -285,9 +290,9 @@ footer .col-md-3 {
 
 .footerLogo {
     width: 50%;
-    margin: 0 25%;
+    max-width: 250px;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
 }
 
 .footer_quickNav {
@@ -351,22 +356,21 @@ footer .col-md-3 {
 }
 
 form {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .footer_sm {
-    width: 25%;
-    display: inline-block;
-    margin-top: 15px;
-    padding: 0;
-    text-align: center;
-
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer_sm_logo {
+    margin: 25px 20px;
     width: 45px;
-    display: inline-block;
+    max-width: 75px;
 }
 
 .thin_footer {
@@ -377,9 +381,183 @@ form {
     padding: 0;
 }
 
-h6 {
+.thin_footer h6 {
     color: #ffffff;
     font-size: 1em;
     text-align: center;
     margin-top: 19px;
+}
+
+
+/*------------------- Begin Media Queries ---------------*/
+
+@media only screen and (max-width: 767px) {
+    .component-footer .col-sm-6, .col-xs-12 {
+        margin-bottom: 50px;
+    }
+
+    .component-header .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #7AC144;
+    }
+
+    nav ul {
+        width: 100%;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    nav ul li a:hover {
+        color: #404041;
+    }
+
+    .partner_slide {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .partner_logo {
+        width: 200px;
+        margin: 0 auto;
+        padding:  25px;;
+    }
+
+    .component-who-we-are .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_logoSec {
+        margin-bottom: 10px;
+    }
+
+    .footer_quickNav {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+    }
+
+    .footer_quickNav ul {
+        width: 80%;
+    }
+
+    .component-footer ul li   {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_contact {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer_contact address {
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer_sm {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer_sm_logo {
+        margin: 25px 0 25px 20px;
+    }
+
+    .thin_footer {
+        margin-top: 19px;
+        padding: 0;
+    }
+
+
+}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+     .component-footer .col-sm-6, .col-xs-12 {
+        margin-bottom: 60px;
+    }
+
+    .component-who-we-are .row {
+        padding: 0;
+    }
+
+    .img_block {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer_logoSec {
+        width: 100%;
+        height: 300px;
+        margin:auto;
+        border: none;
+    }
+
+    .footerLogo {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer_quickNav {
+        width: 80%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .footer_quickNav ul {
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .footer_quickNav ul li {
+        padding: 5px 0;
+    }
+
+    .footer_contact, .footer_contact address, .footer_contact p {
+        width: 100%;
+        border: none;
+        font-size: 1em;
+
+    }
+
+    form{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer_sm {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer_sm_logo {
+        width: 30px;
+        margin: 5px 5px 5px 15px;
+    }
 }

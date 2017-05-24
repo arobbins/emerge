@@ -139,7 +139,7 @@ $logo = get_field('theme_logo', 'options');
     <div class="containter">
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-sm-12">
                 <h1>SOME OF OUR VALUED PARTNERS</h1>
                   <ul class="multiple-items">
                     <li class="partner_slide">
@@ -171,7 +171,7 @@ $logo = get_field('theme_logo', 'options');
   <h1 class="header_white">WHO WE ARE</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col-xs-12">
                 <div class="img_block">
                     <div class="hvrbox">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.jpg" alt="Photo" class="hvrbox-layer_bottom">
@@ -193,11 +193,7 @@ $logo = get_field('theme_logo', 'options');
                         <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-                <div class="img_block">
+                    
                     <div class="hvrbox">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.jpg" alt="Photo" class="hvrbox-layer_bottom">
                     <div class="hvrbox-layer_top">
@@ -246,12 +242,12 @@ $logo = get_field('theme_logo', 'options');
 <footer class="component component-footer">
   <div class="containter">
         <div class="row ">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="footer_logoSec">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg" class="footerLogo">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="footer_quickNav">
                     <ul>
                         <li>WHAT WE DO</li>
@@ -260,7 +256,7 @@ $logo = get_field('theme_logo', 'options');
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                  <div class="footer_contact">
                     <address>
                         1300 Mendota Heights Road<br>
@@ -271,7 +267,7 @@ $logo = get_field('theme_logo', 'options');
 
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="footer_search">
                     <form>
                           <input type="search" name="site_search" placeholder="Search">
@@ -279,11 +275,9 @@ $logo = get_field('theme_logo', 'options');
 
                     <div class="footer_sm">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/fb_logo.png" class="footer_sm_logo">
-                    </div>
-                    <div class="footer_sm">
+                    
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/twitter_logo.png" class="footer_sm_logo">
-                    </div>
-                    <div class="footer_sm">
+                    
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/linkedin_logo.png" class="footer_sm_logo">
                     </div>
                 </div>
