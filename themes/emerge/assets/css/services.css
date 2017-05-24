@@ -1,0 +1,145 @@
+.service {
+  text-align: center;
+  width: calc(100%/7);
+}
+
+.service.is-active .service-title,
+.service.is-active .icon {
+  color: #7ac144;
+  cursor: pointer;
+}
+
+.service-title {
+  font-size: 18px;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  color: #bcbec0;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.service-heading {
+  color: #7ac144;
+  margin: 3em 0 1.5em;
+  text-align: center;
+}
+
+.service-sub-heading {
+  color: #231f20;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sercice-description {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sercice-header {
+  margin-bottom: 7em;
+}
+
+.service-content {
+  display: none;
+  text-align: center;
+}
+
+.service-content.is-active {
+  display: block;
+}
+
+.service-content-graph-wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.service-content {
+  background-color: #f1f2f2;
+  color: #231f20;
+  padding: 0;
+  border-radius: 20px;
+}
+
+
+.service-content p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.service-content h3 {
+  text-align: center;
+}
+
+.service-content-graph-wrapper {
+  background-color: #f1f2f2;
+  border-radius: 20px;
+  padding: 2em 0;
+  margin-top: 3em;
+}
+
+
+.service-content.is-active {
+  width: 350px;
+  margin-top: 4em;
+}
+
+.service-content.is-active .icon {
+  color: #7ac144;
+}
+
+.service-content-analytics {
+  float: left;
+  margin-left: 3em;
+}
+
+.service-content-sales {
+  float: right;
+  margin-right: 3em;
+}
+
+
+
+
+.Drop_x0020_Shadow{fill:none;}
+.Round_x0020_Corners_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#231F20;stroke-miterlimit:10;}
+.Live_x0020_Reflect_x0020_X{fill:none;}
+.Bevel_x0020_Soft{fill:url(#SVGID_1_);}
+.Dusk{fill:#FFFFFF;}
+.Foliage_GS{fill:#FFDD00;}
+.Pompadour_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#44ADE2;}
+
+
+
+.pre-launch-bg {
+  fill: #D0D2D3;
+}
+
+.end-of-life-bg {
+  fill: #BBBDBF;
+}
+
+.in-market-bg {
+  fill: #D0D2D3;
+}
+
+.st3{fill:#7BC043;stroke:#7BC043;stroke-width:0.2027;stroke-miterlimit:10;}
+.st4{fill:none;}
+.st5{fill:#A6A8AB;}
+.st6{font-family:'Montserrat-SemiBold';}
+.st7{font-size:34.2837px;}
+.st8{fill:#929497;}
+.st9{fill:#929497;}
+
+
+
+.graph-letters-bg.is-active {
+  fill: #7ac144;
+}
+
+#icon-flow-graph tspan.is-active {
+  fill: white;
+}

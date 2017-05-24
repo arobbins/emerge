@@ -1,3 +1,7 @@
+@import 'icons.css';
+@import 'flexbox.css';
+@import 'services.css';
+
 /*
 
 Author:         Simpleblend
@@ -124,7 +128,7 @@ nav li a:hover {
     font-weight: 300;
     font-size: 1.5em;
     margin: 50px 0;
-    
+
 }
 
 .multiple-items {
@@ -293,7 +297,7 @@ footer .col-md-3 {
     padding: 0;
     display: inline-block;
     border-right: 1px solid black;
-    
+
 }
 
 .footer_quickNav ul {
@@ -343,7 +347,7 @@ footer .col-md-3 {
     width: 100%;
     height: 100px;
     display: inline-block;
-   
+
 }
 
 form {
@@ -357,7 +361,7 @@ form {
     margin-top: 15px;
     padding: 0;
     text-align: center;
-    
+
 }
 
 .footer_sm_logo {
@@ -377,6 +381,5 @@ h6 {
     color: #ffffff;
     font-size: 1em;
     text-align: center;
-    margin-top: 19px;  
+    margin-top: 19px;
 }
-

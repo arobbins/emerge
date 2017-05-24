@@ -35,10 +35,101 @@ $logo = get_field('theme_logo', 'options');
 <section class="component component-what-we-do">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-left">
-              <h1 class="color-1">WHAT WE DO</h1>
-                <h4>OUR PROCESS</h4>
-                <p></p>
+            <div class="col-md-12 service-wrapper">
+              <h1 class="service-heading">WHAT WE DO</h1>
+
+                <header class="sercice-header">
+                  <h4 class="service-sub-heading">OUR PROCESS</h4>
+                  <p class="sercice-description">Nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                </header>
+
+                <div class="l-row l-row-justify">
+
+                  <section class="service service-analytics is-active">
+                    <i class="icon icon-l icon-analytics"></i>
+                    <h2 class="service-title">Analytics</h2>
+                  </section>
+
+                  <section class="service service-sales is-active">
+                    <i class="icon icon-l icon-sales"></i>
+                    <h2 class="service-title">Sales</h2>
+                  </section>
+
+                  <section class="service service-branding">
+                    <i class="icon icon-l icon-branding"></i>
+                    <h2 class="service-title">Branding</h2>
+                  </section>
+
+                  <section class="service service-logistics">
+                    <i class="icon icon-l icon-logistics"></i>
+                    <h2 class="service-title">Logistics</h2>
+                  </section>
+
+                  <section class="service service-operations">
+                    <i class="icon icon-l icon-operations"></i>
+                    <h2 class="service-title">Operations</h2>
+                  </section>
+
+                  <section class="service service-strategy">
+                    <i class="icon icon-l icon-strategy"></i>
+                    <h2 class="service-title">Strategy</h2>
+                  </section>
+
+                  <section class="service service-transitions">
+                    <i class="icon icon-l icon-transitions"></i>
+                    <h2 class="service-title">Transitions</h2>
+                  </section>
+
+                </div>
+
+                <section class="service-content-graph-wrapper">
+
+                  <div class="service-content service-content-analytics is-active">
+                    <i class="icon icon-s icon-analytics"></i>
+                    <h3>Analytics</h3>
+                    <p>Nulla sit amet est. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.</p>
+                  </div>
+
+                  <div class="service-content service-content-sales is-active">
+                    <i class="icon icon-s icon-sales"></i>
+                    <h3>Sales</h3>
+                    <p>Nullam cursus lacinia erat. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus.</p>
+                  </div>
+
+                  <div class="service-content service-content-branding">
+                    <i class="icon icon-s icon-branding"></i>
+                    <h3>Branding</h3>
+                    <p>Nam adipiscing. Ut tincidunt tincidunt erat. Nunc nec neque. Vestibulum fringilla pede sit amet augue. Cras non dolor.</p>
+                  </div>
+
+                  <div class="service-content service-content-logistics">
+                    <i class="icon icon-s icon-logistics"></i>
+                    <h3>Logistics</h3>
+                    <p>Maecenas malesuada. Aenean vulputate eleifend tellus. Quisque id odio. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Etiam ut purus mattis mauris sodales aliquam.</p>
+                  </div>
+
+                  <div class="service-content service-content-operations">
+                    <i class="icon icon-s icon-operations"></i>
+                    <h3>Operations</h3>
+                    <p>Duis leo. Aenean massa. Curabitur vestibulum aliquam leo. Duis vel nibh at velit scelerisque suscipit. Vestibulum eu odio.</p>
+                  </div>
+
+                  <div class="service-content service-content-strategy">
+                    <i class="icon icon-s icon-strategy"></i>
+                    <h3>Strategy</h3>
+                    <p>Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nullam quis ante. Cras dapibus. Quisque rutrum.</p>
+                  </div>
+
+                  <div class="service-content service-content-transitions">
+                    <i class="icon icon-s icon-transitions"></i>
+                    <h3>Transitions</h3>
+                    <p>Nulla consequat massa quis enim. Curabitur nisi. Fusce ac felis sit amet ligula pharetra condimentum. Aenean viverra rhoncus pede. Vivamus laoreet.</p>
+                  </div>
+
+                  <?php get_template_part('components/flow-graph/flow-graph'); ?>
+                </section>
+
+
             </div>
         </div>
     </div>
@@ -68,7 +159,7 @@ $logo = get_field('theme_logo', 'options');
             <div class="col-md-1"></div>
         </div>
     </div>
-  
+
 
 </section>
 
