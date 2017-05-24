@@ -69,10 +69,15 @@
   font-size: 26px;
 }
 
-
-
 #icon-flow-graph {
   max-width: 380px;
   margin: 0 auto;
   display: block;
+}
+
+
+@media only screen and (max-width : 1300px)  {
+  .icon-l {
+    font-size: 5em;
+  }
 }

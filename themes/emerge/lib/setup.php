@@ -103,6 +103,8 @@ function assets() {
       wp_enqueue_script('comment-reply');
     }
 
+    wp_enqueue_style('fontawesome-css', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, null);
+
     wp_enqueue_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false, null);
     wp_enqueue_style('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', false, null);
 

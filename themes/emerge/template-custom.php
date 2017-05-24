@@ -13,13 +13,12 @@ $logo = get_field('theme_logo', 'options');
 <header class="component component-header">
   <div class="container">
     <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="logo">
-    <nav>
-        <hr width="700">
-        <ul>
-            <li><a href="#">WHAT WE DO</a></li>
-            <li><a href="#">WHO WE ARE</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
+    <nav class="nav-main">
+      <ul>
+        <li><a href="#">WHAT WE DO</a></li>
+        <li><a href="#">WHO WE ARE</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -136,23 +135,26 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <section class="component component-partners">
-    <div class="containter">
+    <div class="container">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 col-sm-12">
-                <h1>SOME OF OUR VALUED PARTNERS</h1>
+                <h1 class="header_white">Some of our valued partners</h1>
                   <ul class="multiple-items">
                     <li class="partner_slide">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/best-buy-logo.svg" alt="Sales" class="partner_logo">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/partner-bestbuy.png" alt="Best Buy" class="partner_logo">
                     </li>
                     <li class="partner_slide">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/Kohls_logo.svg" alt="Sales" class="partner_logo">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/partner-kohls.png" alt="Kohls" class="partner_logo">
                     </li>
                     <li class="partner_slide">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo_amazon.svg" alt="Sales" class="partner_logo">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/partner-amazon.png" alt="Amazon" class="partner_logo">
                     </li>
                     <li class="partner_slide">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/Target_logo.svg" alt="Sales" class="partner_logo">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/partner-target.png" alt="Target" class="partner_logo">
+                    </li>
+                    <li class="partner_slide">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/partner-bestbuy.png" alt="Best Buy" class="partner_logo">
                     </li>
                   </ul>
             </div>
@@ -168,11 +170,11 @@ $logo = get_field('theme_logo', 'options');
   <div class="container">
 
 
-  <h1 class="header_white">WHO WE ARE</h1>
+  <h1 class="header_white">Who we are</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <div class="img_block">
+                <div>
                     <div class="hvrbox">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person1.jpg" alt="Photo" class="hvrbox-layer_bottom">
                     <div class="hvrbox-layer_top">
@@ -193,7 +195,7 @@ $logo = get_field('theme_logo', 'options');
                         <div class="hvrbox-text"><h3>John Doe</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
                         </div>
                     </div>
-                    
+
                     <div class="hvrbox">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/person2.jpg" alt="Photo" class="hvrbox-layer_bottom">
                     <div class="hvrbox-layer_top">
@@ -225,7 +227,7 @@ $logo = get_field('theme_logo', 'options');
 
 <section class="component component-get-connected">
   <div class="container">
-    <h1>Get connected component</h1>
+    <h1 class="header_black">Get connected</h1>
     <div class="row">
         <div class="col-md-6">
 
@@ -240,7 +242,7 @@ $logo = get_field('theme_logo', 'options');
 </section>
 
 <footer class="component component-footer">
-  <div class="containter">
+  <div class="container">
         <div class="row ">
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="footer_logoSec">
@@ -275,9 +277,9 @@ $logo = get_field('theme_logo', 'options');
 
                     <div class="footer_sm">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/fb_logo.png" class="footer_sm_logo">
-                    
+
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/twitter_logo.png" class="footer_sm_logo">
-                    
+
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/linkedin_logo.png" class="footer_sm_logo">
                     </div>
                 </div>

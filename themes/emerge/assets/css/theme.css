@@ -1,6 +1,7 @@
 @import 'icons.css';
 @import 'flexbox.css';
 @import 'services.css';
+@import 'vendor.css';
 
 /*
 
@@ -28,12 +29,20 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 250px;
 }
 
+.header_black,
 .header_white {
-    color: #ffffff;
-    font-family: Montserrat-Bold, helvetica, arial;
-    text-align: center;
-    margin: 0 0 25px 0;
-    padding: 0;
+  margin: 0 0 25px 0;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Montserrat', helvetica, arial;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.header_black {
+  color: #414142;
 }
 
 .component {
@@ -114,33 +123,32 @@ nav li a:hover {
 
 
 .component-partners {
-    width: 100%;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    background-color: #7AC144;
+  width: 100%;
+  margin: 0;
+  padding: 5em 0;
+  background-color: #7AC144;
 }
 
-.component-partners h1 {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Montserrat', helvetica, arial;
-    font-weight: 300;
-    font-size: 1.5em;
-    margin: 50px 0;
+.component-partners .slick-prev {
+  left: -3%;
+  top: calc(50% - 25px);
+}
 
+.component-partners .slick-next {
+  right: -3%;
+  top: calc(50% - 25px);
 }
 
 .multiple-items {
-    width: 100%;
-    padding-left: 50px;
+  width: 100%;
+  padding-left: 50px;
+  list-style: none;
 }
 
 .partner_logo {
-    width: 200px;
-    height: 75px;
-    margin: 0;
-    padding:10px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 220px;
 }
 
 .partner_slide {
@@ -154,12 +162,13 @@ nav li a:hover {
 /*------------------- Begin Who We Are ---------------*/
 
 .component-who-we-are {
-    background-image: url("../imgs/bg-who-we-are.svg");
-    background-size: cover;
-    background-repeat: repeat;
-    width: 100%;
-    height: auto;
-    padding: 50px 0 100px 0;
+  background-image: url("../imgs/bg-who-we-are.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: auto;
+  padding: 50px 0 100px 0;
 }
 
 .img_block {
@@ -172,13 +181,13 @@ nav li a:hover {
 	box-sizing: border-box;
 }
 .hvrbox {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	width: 33%;
-    min-width: 275px;
-	height: auto;
-    padding: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 33%;
+  min-width: 275px;
+  height: auto;
+  padding: 15px;
 }
 .hvrbox img {
 	width: 100%;
@@ -189,19 +198,19 @@ nav li a:hover {
 .hvrbox .hvrbox-layer_top {
 	opacity: 0;
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
+
+  left: 15px;
+  top: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+
 	background: rgba(0, 0, 0, 0.6);
 	color: #fff;
-	padding: 5px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
+	padding: 15px;
+	-moz-transition: all ease-in-out 0.2s;
+	-webkit-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
 }
 .hvrbox:hover .hvrbox-layer_top,
 .hvrbox.active .hvrbox-layer_top {
@@ -429,9 +438,9 @@ form {
     }
 
     .partner_logo {
-        width: 200px;
-        margin: 0 auto;
-        padding:  25px;;
+      width: 200px;
+      margin: 0 auto;
+      padding:  25px;;
     }
 
     .component-who-we-are .container{
@@ -560,4 +569,19 @@ and (max-device-width : 1024px)  {
         width: 30px;
         margin: 5px 5px 5px 15px;
     }
+}
+
+.nav-main {
+  position: relative;
+  text-align: center;
+}
+
+.nav-main:before {
+  content: '';
+  display: inline-block;
+  width: 75%;
+  height: 1px;
+  background: #ddd;
+  position: relative;
+  top: -20px;
 }

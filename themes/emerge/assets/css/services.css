@@ -3,8 +3,23 @@
   width: calc(100%/7);
 }
 
+.service .icon {
+  width: 100%;
+  display: block;
+}
+
+.service .icon:before {
+  width: 100%;
+  display: block;
+}
+
+.service:hover {
+  cursor: pointer;
+}
+
 .service.is-active .service-title,
 .service.is-active .icon {
+  transition: all ease 0.2s;
   color: #7ac144;
   cursor: pointer;
 }
@@ -20,8 +35,9 @@
 
 .service-heading {
   color: #7ac144;
-  margin: 3em 0 1.5em;
+  margin: 2.5em 0 1.5em;
   text-align: center;
+  font-weight: bold;
 }
 
 .service-sub-heading {
@@ -44,7 +60,44 @@
 .service-content {
   display: none;
   text-align: center;
+  position: absolute;
 }
+
+.service-content-transitions,
+.service-content-sales {
+  right: 3em;
+  top: 1em;
+}
+
+.service-content-analytics {
+  left: 3em;
+  top: 1em;
+}
+
+
+.service-content-branding {
+  left: 3em;
+  top: 1em;
+}
+
+.service-content-logistics {
+  right: 3em;
+  top: 1em;
+}
+
+.service-content-operations {
+  left: 3em;
+  top: 50%;
+}
+
+.service-content-strategy {
+  right: 3em;
+  top: 50%;
+}
+
+
+
+
 
 .service-content.is-active {
   display: block;
@@ -54,6 +107,10 @@
   width: 100%;
   position: relative;
   margin-bottom: 5em;
+}
+
+.service-content-graph-wrapper.is-tall {
+  padding: 14em 0;
 }
 
 .service-content {
@@ -88,20 +145,9 @@
 }
 
 .service-content.is-active .icon {
+  transition: all ease 0.2s;
   color: #7ac144;
 }
-
-.service-content-analytics {
-  float: left;
-  margin-left: 3em;
-}
-
-.service-content-sales {
-  float: right;
-  margin-right: 3em;
-}
-
-
 
 
 .Drop_x0020_Shadow{fill:none;}
@@ -137,9 +183,11 @@
 
 
 .graph-letters-bg.is-active {
+  transition: all ease 0.2s;
   fill: #7ac144;
 }
 
 #icon-flow-graph tspan.is-active {
+  transition: all ease 0.2s;
   fill: white;
 }
