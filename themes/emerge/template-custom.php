@@ -15,9 +15,9 @@ $logo = get_field('theme_logo', 'options');
     <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="logo">
     <nav class="nav-main">
       <ul>
-        <li><a href="#">WHAT WE DO</a></li>
-        <li><a href="#">WHO WE ARE</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#do">WHAT WE DO</a></li>
+        <li><a href="#are">WHO WE ARE</a></li>
+        <li><a href="#connect">CONTACT</a></li>
       </ul>
     </nav>
   </div>
@@ -31,6 +31,7 @@ $logo = get_field('theme_logo', 'options');
     </ul>
 </section>
 
+<div id="do"></div>
 <section class="component component-what-we-do">
     <div class="container">
         <div class="row">
@@ -165,6 +166,7 @@ $logo = get_field('theme_logo', 'options');
 
 </section>
 
+<div id="are"></div>
 <section class="component component-who-we-are">
 
   <div class="container">
@@ -225,6 +227,7 @@ $logo = get_field('theme_logo', 'options');
 
 </section>
 
+<div id="connect"></div>
 <section class="component component-get-connected">
   <div class="container">
     <h1 class="header_black">Get connected</h1>
@@ -252,9 +255,9 @@ $logo = get_field('theme_logo', 'options');
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="footer_quickNav">
                     <ul>
-                        <li>WHAT WE DO</li>
-                        <li>WHO WE ARE</li>
-                        <li>GET CONNECTED</li>
+                        <li><a href="#do">WHAT WE DO</a></li>
+                        <li><a href="#are">WHO WE ARE</a></li>
+                        <li><a href="#connect">GET CONNECTED</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,8 +267,8 @@ $logo = get_field('theme_logo', 'options');
                         1300 Mendota Heights Road<br>
                         Mendota Heights, MN 55120
                     </address>
-                        <p>952.905.2503<br>
-                        info@e-mergeretail.com</p>
+                        <p>952.905.2503</p><br>
+                        <a href="mailto:info@e-mergeretail.com"></a>
 
                 </div>
             </div>

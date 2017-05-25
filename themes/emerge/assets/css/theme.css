@@ -299,7 +299,8 @@ footer .col-md-3 {
 
 .footerLogo {
     width: 50%;
-    max-width: 250px;
+    max-width: 300px;
+    min-width: 200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -321,12 +322,21 @@ footer .col-md-3 {
     position: relative;
 }
 
-.component-footer ul li {
+.footer_quickNav ul li {
     font-family: 'Montserrat', helvetica, arial;
     font-size: 1.1em;
     font-weight: 600;
     list-style-type: none;
     padding: 2px 0;
+}
+
+.footer_quickNav ul li a {
+    color: #414142;
+}
+
+.footer_quickNav ul li a:hover {
+    text-decoration: none;
+    color: #7BC043;
 }
 
 .footer_contact {
@@ -390,11 +400,11 @@ form {
     padding: 0;
 }
 
-.thin_footer h6 {
+h6 {
     color: #ffffff;
     font-size: 1em;
     text-align: center;
-    margin-top: 19px;
+    
 }
 
 
@@ -449,7 +459,16 @@ form {
     }
 
     .footer_logoSec {
-        margin-bottom: 10px;
+        margin: 0 auto 50px;
+        padding: 0;
+        text-align: center;
+        border: none;
+    }
+    
+    .footerLogo {
+        width: 250px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .footer_quickNav {
@@ -466,12 +485,14 @@ form {
     .component-footer ul li   {
         width: 100%;
         text-align: center;
+        padding: 5px 0;
     }
 
     .footer_contact {
         width: 100%;
         text-align: center;
         margin-bottom: 15px;
+        border: none;
     }
 
     .footer_contact address {
@@ -485,20 +506,26 @@ form {
     }
 
     .footer_sm {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         padding: 0;
+        text-align: center;
     }
 
     .footer_sm_logo {
-        margin: 25px 0 25px 20px;
-    }
-
-    .thin_footer {
-        margin-top: 19px;
+        margin: 25px 5px 25px;
         padding: 0;
     }
 
+    .thin_footer {
+        width: 100%;
+    }
+    
+    h6{
+        margin-top: 15px;
+        text-align: center;
+        color: #fff;
+    }
 
 }
 
@@ -506,9 +533,7 @@ form {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
-     .component-footer .col-sm-6, .col-xs-12 {
-        margin-bottom: 60px;
-    }
+   
 
     .component-who-we-are .row {
         padding: 0;
@@ -521,29 +546,36 @@ and (max-device-width : 1024px)  {
 
     .footer_logoSec {
         width: 100%;
-        height: 300px;
+        height: 200px;
         margin:auto;
         border: none;
     }
 
     .footerLogo {
-        width: 70%;
+        width: 250px;
         margin: 0 auto;
+        text-align: center;
     }
 
     .footer_quickNav {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        height: 200px;
+        
         border: none;
     }
 
     .footer_quickNav ul {
         width: 100%;
+        margin: 0 auto;
         font-size: .8em;
     }
 
     .footer_quickNav ul li {
         padding: 5px 0;
+    }
+    
+    .footer_contact {
+        height: 200px;
     }
 
     .footer_contact, .footer_contact address, .footer_contact p {
@@ -551,6 +583,13 @@ and (max-device-width : 1024px)  {
         border: none;
         font-size: 1em;
 
+    }
+    
+    .footer_search {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     form{
