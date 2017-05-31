@@ -43,7 +43,7 @@ $logo = get_field('theme_logo', 'options');
                   <p class="sercice-description">Nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
                 </header>
 
-                <div class="l-row l-row-justify">
+                <div class="l-row l-row-justify process-icons">
 
                   <section class="service service-analytics is-active">
                     <i class="icon icon-l icon-analytics"></i>
@@ -227,75 +227,79 @@ $logo = get_field('theme_logo', 'options');
 
 </section>
 
-<div id="connect"></div>
-<section class="component component-get-connected">
-  <div class="container">
-    <h1 class="header_black">Get connected</h1>
-    <div class="row">
-        <div class="col-md-6">
 
-        </div>
 
-        <div class="col-md-6">
 
-        </div>
 
-    </div>
-  </div>
-</section>
+<?php get_template_part('components/connect/connect'); ?>
+
+
+
+
 
 <footer class="component component-footer">
+
   <div class="container">
-        <div class="row ">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="footer_logoSec">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg" class="footerLogo">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="footer_quickNav">
-                    <ul>
-                        <li><a href="#do">WHAT WE DO</a></li>
-                        <li><a href="#are">WHO WE ARE</a></li>
-                        <li><a href="#connect">GET CONNECTED</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                 <div class="footer_contact">
-                    <address>
-                        1300 Mendota Heights Road<br>
-                        Mendota Heights, MN 55120
-                    </address>
-                        <p>952.905.2503</p><br>
-                        <a href="mailto:info@e-mergeretail.com"></a>
-
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="footer_search">
-                    <form>
-                          <input type="search" name="site_search" placeholder="Search">
-                    </form>
-
-                    <div class="footer_sm">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/fb_logo.png" class="footer_sm_logo">
-
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/twitter_logo.png" class="footer_sm_logo">
-
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/linkedin_logo.png" class="footer_sm_logo">
-                    </div>
-                </div>
-            </div>
-
-
-    </div>
-</div>
-
     <div class="row">
-        <div class="col-md-12 thin_footer">
-               <h6>&copy;Emerge Retail</h6>
+
+      <!-- Footer col 1 -->
+      <div class="col-md-3 col-sm-6 col-xs-12 footer-col footer-col-logo">
+        <div class="footer_logoSec">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-primary.svg" class="footerLogo">
         </div>
+      </div>
+
+      <!-- Footer col 2 -->
+      <div class="col-md-3 col-sm-6 col-xs-12 footer-col">
+        <div class="footer_quickNav">
+          <ul>
+            <li><a href="#do">WHAT WE DO</a></li>
+            <li><a href="#are">WHO WE ARE</a></li>
+            <li><a href="#connect">GET CONNECTED</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer col 3 -->
+      <div class="col-md-3 col-sm-6 col-xs-12 footer-col footer-col-address">
+        <div class="footer_contact">
+
+          <address>
+          1300 Mendota Heights Road<br>
+          Mendota Heights, MN 55120
+
+          <p>952.905.2503</p><br>
+          <a href="mailto:info@e-mergeretail.com">info@e-mergeretail.com</a>
+          </address>
+
+        </div>
+      </div>
+
+      <!-- Footer col 4 -->
+      <div class="col-md-3 col-sm-6 col-xs-12 footer-col footer-col-search">
+        <div class="footer_search">
+
+          <div class="form-search-wrapper">
+            <?php // get_search_form(); ?>
+          </div>
+
+          <div class="footer_sm">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/fb_logo.png" class="footer_sm_logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/twitter_logo.png" class="footer_sm_logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/linkedin_logo.png" class="footer_sm_logo">
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
+  </div>
+
+  <div class="footer-bottom row">
+    <div class="col-md-12 thin_footer">
+      <h6>&copy; <?php echo date("Y"); ?> Emerge Retail</h6>
+    </div>
+  </div>
 
 </footer>

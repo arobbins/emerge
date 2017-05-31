@@ -54,11 +54,11 @@
 }
 
 .icon-l {
-  font-size: 8em;
+  font-size: 5em;
 }
 
 .icon-s {
-  font-size: 6em;
+  font-size: 4em;
 }
 
 .icon-wrapper {
@@ -70,9 +70,12 @@
 }
 
 #icon-flow-graph {
-  max-width: 380px;
+  max-width: 330px;
   margin: 0 auto;
   display: block;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 155px);
 }
 
 
