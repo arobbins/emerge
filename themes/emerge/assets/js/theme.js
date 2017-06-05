@@ -1,6 +1,6 @@
 (function ($) {
 
-  $(function () {
+  jQuery(function () {
 
 
 		/*
@@ -9,7 +9,7 @@
 
 		*/
 		function initComponentPartners() {
-			$('.multiple-items').slick({
+			jQuery('.multiple-items').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -39,7 +39,7 @@
 
 		*/
 		function initComponentMarquee() {
-			$('.carousel-container').slick({
+			jQuery('.carousel-container').slick({
         responsive: [
             {
               breakpoint: 900,
@@ -59,31 +59,31 @@
 
     */
     function turnOnPreLaunch() {
-      $('.service-analytics, .service-sales').addClass('is-active');
-      $('.pre-launch-bg').addClass('is-active');
-      $('#pre-launch tspan').addClass('is-active');
+      jQuery('.service-analytics, .service-sales').addClass('is-active');
+      jQuery('.pre-launch-bg').addClass('is-active');
+      jQuery('#pre-launch tspan').addClass('is-active');
 
-      $('.service-content-analytics, .service-content-sales').addClass('is-active');
+      jQuery('.service-content-analytics, .service-content-sales').addClass('is-active');
 
     }
 
 		function turnOnInMarket() {
-      $('.service-branding, .service-logistics, .service-operations, .service-strategy').addClass('is-active');
-			$('.in-market-bg').addClass('is-active');
-			$('#in-market tspan').addClass('is-active');
+      jQuery('.service-branding, .service-logistics, .service-operations, .service-strategy').addClass('is-active');
+			jQuery('.in-market-bg').addClass('is-active');
+			jQuery('#in-market tspan').addClass('is-active');
 
-      $('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').addClass('is-active');
+      jQuery('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').addClass('is-active');
 
-      $('.service-content-graph-wrapper').addClass('is-tall');
+      jQuery('.service-content-graph-wrapper').addClass('is-tall');
 
 		}
 
     function turnOnEndOfLife() {
-      $('.service-transitions').addClass('is-active');
-			$('.end-of-life-bg').addClass('is-active');
-			$('#end-of-life tspan').addClass('is-active');
+      jQuery('.service-transitions').addClass('is-active');
+			jQuery('.end-of-life-bg').addClass('is-active');
+			jQuery('#end-of-life tspan').addClass('is-active');
 
-      $('.service-content-transitions').addClass('is-active');
+      jQuery('.service-content-transitions').addClass('is-active');
 		}
 
 
@@ -93,34 +93,34 @@
 
     */
 		function turnOffPreLaunch() {
-      $('.service-analytics, .service-sales').removeClass('is-active');
-			$('.pre-launch-bg').removeClass('is-active');
-			$('#pre-launch tspan').removeClass('is-active');
+      jQuery('.service-analytics, .service-sales').removeClass('is-active');
+			jQuery('.pre-launch-bg').removeClass('is-active');
+			jQuery('#pre-launch tspan').removeClass('is-active');
 
 
-      $('.service-content-analytics, .service-content-sales').removeClass('is-active');
+      jQuery('.service-content-analytics, .service-content-sales').removeClass('is-active');
 
 
 
 		}
 
     function turnOffInMarket() {
-      $('.service-branding, .service-logistics, .service-operations, .service-strategy').removeClass('is-active');
-      $('.in-market-bg').removeClass('is-active');
-			$('#in-market tspan').removeClass('is-active');
+      jQuery('.service-branding, .service-logistics, .service-operations, .service-strategy').removeClass('is-active');
+      jQuery('.in-market-bg').removeClass('is-active');
+			jQuery('#in-market tspan').removeClass('is-active');
 
-      $('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').removeClass('is-active');
+      jQuery('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').removeClass('is-active');
 
-      $('.service-content-graph-wrapper').removeClass('is-tall');
+      jQuery('.service-content-graph-wrapper').removeClass('is-tall');
 
     }
 
     function turnOffEndOfLife() {
-      $('.service-transitions').removeClass('is-active');
-      $('.end-of-life-bg').removeClass('is-active');
-			$('#end-of-life tspan').removeClass('is-active');
+      jQuery('.service-transitions').removeClass('is-active');
+      jQuery('.end-of-life-bg').removeClass('is-active');
+			jQuery('#end-of-life tspan').removeClass('is-active');
 
-      $('.service-content-transitions').removeClass('is-active');
+      jQuery('.service-content-transitions').removeClass('is-active');
 
     }
 
@@ -134,7 +134,7 @@
 
 
 
-			$('.service-analytics, .service-sales').hover(function() {
+			jQuery('.service-analytics, .service-sales').hover(function() {
 
         turnOffInMarket();
         turnOffEndOfLife();
@@ -143,9 +143,9 @@
 			});
 
 
-			$('.service-branding, .service-logistics, .service-operations, .service-strategy').hover(function() {
+			jQuery('.service-branding, .service-logistics, .service-operations, .service-strategy').hover(function() {
 
-        if (! $('.service-branding').hasClass('is-active')) {
+        if (! jQuery('.service-branding').hasClass('is-active')) {
           turnOffPreLaunch();
           turnOffEndOfLife();
           turnOnInMarket();
@@ -154,7 +154,7 @@
       }, function() {
 
         // console.log('hover out');
-        // if (! $('.service-branding').hasClass('is-active')) {
+        // if (! jQuery('.service-branding').hasClass('is-active')) {
         //   turnOffInMarket();
   			// 	turnOffEndOfLife();
         //   turnOnPreLaunch();
@@ -163,7 +163,7 @@
       });
 
 
-			$('.service-transitions').hover(function() {
+			jQuery('.service-transitions').hover(function() {
 
         turnOffInMarket();
 				turnOffPreLaunch();
@@ -527,23 +527,27 @@
 
     function initComponentConnect() {
 
-      var map = new GMaps({
-        div: '#map',
-        lat: 44.8651699,
-        lng: -93.1614076,
-        zoom: 13,
-        styles: getMapStyles()
-      });
+      if (jQuery('#map').length) {
 
-      map.addMarker({
-        lat: 44.8651699,
-        lng: -93.1614076,
-        title: '1300 Mendota Heights Road Mendota Heights, MN 55120',
-        animation: google.maps.Animation.DROP,
-        click: function(e) {
-          alert('You clicked in this marker');
-        }
-      });
+        var map = new GMaps({
+          div: '#map',
+          lat: 44.8651699,
+          lng: -93.1614076,
+          zoom: 13,
+          styles: getMapStyles()
+        });
+
+        map.addMarker({
+          lat: 44.8651699,
+          lng: -93.1614076,
+          title: '1300 Mendota Heights Road Mendota Heights, MN 55120',
+          animation: google.maps.Animation.DROP,
+          click: function(e) {
+            alert('You clicked in this marker');
+          }
+        });
+
+      }
 
     }
 

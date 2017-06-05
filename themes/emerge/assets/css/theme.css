@@ -27,7 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   display: block;
   max-width: 250px;
+  margin-bottom: 3em;
 }
+
+
 
 .header_black,
 .header_white {
@@ -52,14 +55,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------- Begin Nav ---------------*/
 
-nav {
+.menu-primary-navigation-container {
     display: block;
     width: 100%;
-    margin: 40px auto 50px;
+    margin: 0 auto 50px;
     height: auto;
 }
 
-nav ul {
+.menu-primary-navigation-container .nav {
     width:100%;
     margin:0 auto;
     padding:0;
@@ -67,28 +70,35 @@ nav ul {
     text-align: center;
 }
 
-nav li {
+.nav .menu-item {
     display: inline-block;
 
 }
 
-nav:after {
+.nav:after {
     content: '';
     display: inline-block;
     width: 100%;
 }
 
-nav li a {
+.nav .menu-item a {
     padding: 10px 25px;
     color: #404041;
+    text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
     font-family: Montserrat-Bold, helvetica, arial;
 }
 
-nav li a:hover {
+.footer_quickNav .nav .menu-item a {
+
+    font-size: 0.8em;
+}
+
+.nav .menu-item a:hover {
     color: #7BC043;
     text-decoration: none;
+    background: none;
 }
 
 
@@ -493,6 +503,10 @@ form {
     max-width: 75px;
 }
 
+.footer_sm_logo:hover {
+  opacity: 0.7;
+}
+
 .thin_footer {
     background-color: #414142;
     width: 100%;
@@ -509,7 +523,7 @@ h6 {
 }
 
 .component-header {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 .footer-col-search,
@@ -539,6 +553,10 @@ footer .footer-col-search {
 
 
 @media screen and (max-width: 1000px) {
+
+  .hvrbox {
+    width: 47%;
+  }
 
   #icon-flow-graph {
     margin: 4em auto;
@@ -647,6 +665,11 @@ footer .footer-col-search {
 
 @media screen and (max-width: 767px) {
 
+  .hvrbox {
+    width: 100%;
+    padding: 0;
+  }
+
   .nav-main {
     margin-bottom: 0;
   }
@@ -654,6 +677,28 @@ footer .footer-col-search {
   .nav-main ul {
     padding: 1.5em 0 0;
   }
+
+  .component-header .nav {
+    padding-top: 1em;
+  }
+
+
+  .nav .menu-item {
+    display: block;
+  }
+
+  .nav .menu-item a {
+    display: block;
+    color: white;
+  }
+
+  .nav .menu-item a:hover {
+    color: #231f20;
+  }
+
+
+
+
 
   .component-header {
     margin-top: 2em;
@@ -959,4 +1004,8 @@ and (max-device-width : 1024px)  {
   background: #ddd;
   position: relative;
   top: -20px;
+}
+
+.footer_contact .footer-phone {
+  margin-top: 1em;
 }
