@@ -69,7 +69,7 @@
 
 		function turnOnInMarket() {
       jQuery('.service-branding, .service-logistics, .service-operations, .service-strategy').addClass('is-active');
-			jQuery('.in-market-bg').addClass('is-active');
+			jQuery('.in-market-bg').removeClass('is-grey').addClass('is-active');
 			jQuery('#in-market tspan').addClass('is-active');
 
       jQuery('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').addClass('is-active');
@@ -82,8 +82,11 @@
       jQuery('.service-transitions').addClass('is-active');
 			jQuery('.end-of-life-bg').addClass('is-active');
 			jQuery('#end-of-life tspan').addClass('is-active');
-
       jQuery('.service-content-transitions').addClass('is-active');
+
+      jQuery('.in-market-bg').addClass('is-grey');
+      jQuery('#in-market tspan').addClass('is-grey');
+
 		}
 
 
@@ -106,8 +109,8 @@
 
     function turnOffInMarket() {
       jQuery('.service-branding, .service-logistics, .service-operations, .service-strategy').removeClass('is-active');
-      jQuery('.in-market-bg').removeClass('is-active');
-			jQuery('#in-market tspan').removeClass('is-active');
+      jQuery('.in-market-bg').removeClass('is-active is-grey');
+			jQuery('#in-market tspan').removeClass('is-active is-grey');
 
       jQuery('.service-content-branding, .service-content-logistics, .service-content-operations, .service-content-strategy').removeClass('is-active');
 

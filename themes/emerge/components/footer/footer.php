@@ -37,7 +37,7 @@
           <?php echo $addressLine1; ?><br>
           <?php echo $addressLine2; ?>
 
-          <p class="footer-phone"><?php the_field('theme_contact_phone', 'option'); ?></p><br>
+          <p class="footer-phone"><?php the_field('theme_contact_phone', 'option'); ?></p>
 
           <a href="mailto:<?php the_field('theme_contact_email', 'option'); ?>"><?php the_field('theme_contact_email', 'option'); ?></a>
           </address>

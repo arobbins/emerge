@@ -19,12 +19,12 @@ $team = get_sub_field('team');
 
                   <?php foreach ($team as $key => $team_member) { ?>
 
-                    <div class="hvrbox">
+                    <div class="hvrbox <?php echo empty($team_member['team_member_description']) ? 'is-empty-desc' : ''; ?>">
                       <img src="<?php echo $team_member['team_member_photo']; ?>" alt="Photo" class="hvrbox-layer_bottom">
                       <div class="hvrbox-layer_top">
                         <div class="hvrbox-text">
                           <h3><?php echo $team_member['team_member_name']; ?></h3>
-                          <?php echo $team_member['team_member_description']; ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.
+                          <?php echo $team_member['team_member_description']; ?>
                         </div>
                       </div>
                     </div>
