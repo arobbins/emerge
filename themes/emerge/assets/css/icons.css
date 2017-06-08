@@ -75,12 +75,28 @@
   display: block;
   position: absolute;
   top: -20px;
-  left: calc(50% - 155px);
+  left: calc(50% - 165px);
 }
 
 
 @media only screen and (max-width : 1300px)  {
   .icon-l {
     font-size: 5em;
+  }
+}
+
+@media only screen and (max-width : 1000px)  {
+  #icon-flow-graph {
+    max-width: -375px;
+    top: -360px;
+    left: calc(50% - 165px);
+  }
+}
+
+@media only screen and (max-width : 600px)  {
+  #icon-flow-graph {
+    left: calc(50% - 110px);
+    max-width: 220px;
+    top: -320px;
   }
 }

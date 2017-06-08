@@ -17,12 +17,19 @@
             {
               breakpoint: 1200,
               settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 900,
+              breakpoint: 600,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -39,17 +46,23 @@
 
 		*/
 		function initComponentMarquee() {
-			jQuery('.carousel-container').slick({
-        responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            },
-          ]
+
+      jQuery('.carousel-container').on('init', function(event, slick, direction){
+        jQuery('.component-marquee').fadeIn('fast');
       });
+
+      jQuery('.carousel-container').slick({
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
 		}
 
 
@@ -537,7 +550,8 @@
           lat: 44.8651699,
           lng: -93.1614076,
           zoom: 13,
-          styles: getMapStyles()
+          styles: getMapStyles(),
+          scrollwheel: false
         });
 
         map.addMarker({
@@ -556,6 +570,35 @@
 
 
 
+
+
+
+
+
+    function initNavAnimations() {
+
+      jQuery('#menu-primary-navigation .menu-item a').on('click', function(e) {
+        e.preventDefault();
+
+        var href = $(this).attr('href');
+        // console.log('HEY OOO', href);
+
+
+        $('html, body').animate({
+          scrollTop: $(href).offset().top
+        }, 600);
+
+
+
+
+      });
+
+    }
+
+
+
+
+
 		/*
 
 		Initialize app
@@ -565,6 +608,8 @@
 		initComponentMarquee();
 		initComponentPartners();
 		initComponentWhatWeDo();
+
+    initNavAnimations();
 
 
   });

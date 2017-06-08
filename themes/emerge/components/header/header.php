@@ -6,9 +6,9 @@ $logo = get_field('theme_logo', 'options');
 
 <div class="header-illustration container">
 
-  <!-- <div class="header-illustration-left container"></div> -->
+  <div class="header-illustration-left container"></div>
   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/header-illustration.svg" alt="" class="header-illustration-img">
-  <!-- <div class="header-illustration-right container"></div> -->
+  <div class="header-illustration-right container"></div>
 
 </div>
 
