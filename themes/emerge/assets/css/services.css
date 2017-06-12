@@ -140,7 +140,7 @@
 
 .service-content.is-active {
   transition: all ease 0.6s;
-  width: 300px;
+  width: 285px;
   margin-top: 2em;
   visibility: visible;
   opacity: 1;
