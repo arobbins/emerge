@@ -20,7 +20,7 @@ $mapURL = 'https://www.google.com/maps/place/' . urlencode($address) . '/@44.865
       <div class="col-md-6">
         <div id="map"></div>
         <address class="map-address">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/logo-secondary.svg" alt="Emerge Retail" class="logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/emerge-retail-logo.png" alt="Emerge Retail" class="logo">
           <a href="<?php echo $mapURL; ?>" class="map-address-content">
             <?php echo $addressLine1; ?><br>
             <?php echo $addressLine2; ?>
