@@ -154,10 +154,10 @@
 					<div class="postbox">
 						<h3><span><?php _e( 'Compress and Optimize Images with ShortPixel', 'svg-support' ); ?></span></h3>
 						<div class="inside">
-							<?php echo '<a target="_blank" class="shortpixel-logo" href="#"><img src="' . BODHI_SVGS_PLUGIN_URL . '/admin/img/shortpixel.png" /></a>'; ?>
+							<?php echo '<a target="_blank" class="shortpixel-logo" href="https://shortpixel.com/h/af/OLKMLXE207471"><img src="' . BODHI_SVGS_PLUGIN_URL . '/admin/img/shortpixel.png" /></a>'; ?>
 							<p><?php _e( 'Now that you\'ve set up SVG Support on your site, it\'s time to look at optimizing your existing images (jpg & png).', 'svg-support' ); ?></p>
 							<p><?php _e( 'ShortPixel improves website performance by reducing the size of your images. The results are no different in quality from the original, plus your originals are stored in a backup folder for you.', 'svg-support' ); ?></p>
-							<p><a class="shortpixel-button button-primary" href="#"><?php _e( 'Try ShortPixel WordPress Plugin for FREE', 'svg-support' ); ?></a></p>
+							<p><a class="shortpixel-button button-primary" href="https://shortpixel.com/h/af/OLKMLXE207471"><?php _e( 'Try ShortPixel WordPress Plugin for FREE', 'svg-support' ); ?></a></p>
 						</div> <!-- .inside -->
 					</div> <!-- .postbox -->
 

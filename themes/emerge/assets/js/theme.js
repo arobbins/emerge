@@ -545,13 +545,19 @@
 
       if (jQuery('#map').length) {
 
+        var image = {
+          url: '../wp-content/themes/emerge/assets/imgs/icon-marker.svg',
+          scaledSize : new google.maps.Size(55, 75),
+        };
+
         var map = new GMaps({
           div: '#map',
           lat: 44.8651699,
           lng: -93.1614076,
           zoom: 13,
           styles: getMapStyles(),
-          scrollwheel: false
+          scrollwheel: false,
+          icon: "../icon-marker.svg"
         });
 
         map.addMarker({
@@ -559,9 +565,7 @@
           lng: -93.1614076,
           title: '1300 Mendota Heights Road Mendota Heights, MN 55120',
           animation: google.maps.Animation.DROP,
-          click: function(e) {
-            alert('You clicked in this marker');
-          }
+          icon: image
         });
 
       }

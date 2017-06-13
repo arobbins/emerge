@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: svg, vector, css, style, mime, mime type, embed, img, inline, animation, animate, js
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 2.3.9
+Stable tag: 2.3.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -162,6 +162,10 @@ or
 
 
 == Changelog ==
+
+= 2.3.10 =
+
+* Fixed missing links in settings page.
 
 = 2.3.9 =
 
@@ -322,6 +326,10 @@ or
 * Initial Release.
 
 == Upgrade Notice ==
+
+= 2.3.10 =
+
+* Fixed missing links in settings page.
 
 = 2.3.9 =
 
