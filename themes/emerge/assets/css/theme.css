@@ -199,7 +199,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------- Begin Partners ---------------*/
 
-
 .component-partners {
   width: 100%;
   margin: 0;
@@ -208,12 +207,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .component-partners .slick-prev {
-  left: -3%;
+  left: -7%;
   top: calc(50% - 25px);
 }
 
 .component-partners .slick-next {
-  right: -3%;
+  right: -7%;
   top: calc(50% - 25px);
 }
 

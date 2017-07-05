@@ -1,3 +1,7 @@
+.slick-slider.multiple-items {
+  padding-left: 0;
+}
+
 .slick-prev:before {
   content: "\f137";
 }
